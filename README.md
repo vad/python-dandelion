@@ -25,7 +25,7 @@ Usage
 
 Retrieving entities from dandelion is easy, just instantiate a Datagem and iterate; pagination is implemented automatically for you, so don't worry and just get data.
 
-    >>> from dandelionimport Datagem
+    >>> from dandelion import Datagem
     >>> d = Datagem('datagem-slug')
     >>> for obj in d.objects[:10]:
     ...     print obj['acheneID']
@@ -124,7 +124,7 @@ Available comparators are:
 
 ### Sort elements
 
-Sorting is easy as everything else, with the `sort` method:
+Sorting is easy as everything else, with the `order` method:
 
     >>> for obj in d.objects.select('acheneID').order('acheneID')[:5]:
     ...     print obj['acheneID']
